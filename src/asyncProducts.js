@@ -5,7 +5,7 @@ const products = [
         description: 'La Roche-Posay Hyalu B5 sérum de ácido hialurónico puro para rostro, con vitamina B5, antienvejecimiento para líneas finas y arrugas, hidratante para rellenar y reparar la piel seca, seguro para pieles sensibles. 50 ML',
         price: 45,
         stock: 10,
-        img: ['/public/img/1.png'],
+        img: ['/img/1.png'],
         category: 'la_roche_posay'
     },
     {
@@ -14,7 +14,7 @@ const products = [
         description: 'La Roche-Posay Anthelios Protector solar con color SPF 40+ | Amplio Espectro SPF + Antioxidantes | Protector solar de dióxido de titanio y óxido de zinc | 4 tonos flexibles sin fondo blanco | Sin aceite y sin oxibenzona. 50 ML',
         price: 35,
         stock: 15,
-        img: ['/public/img/2.png'],
+        img: ['/img/2.png'],
         category: 'la_roche_posay'
     },
     {
@@ -23,7 +23,7 @@ const products = [
         description: 'La Roche-Posay Toleriane Limpiador facial espumoso purificante, lavado facial sin aceite para pieles grasas y pieles sensibles. Contiene niacinamida, no reseca la piel, sin perfume. 400 ML',
         price: 20,
         stock: 10,
-        img: ['/public/img/3.png'],
+        img: ['/img/3.png'],
         category: 'la_roche_posay'
     },
     {
@@ -32,7 +32,7 @@ const products = [
         description: 'Sérum facial de retinol puro de La Roche-Posay con vitamina B3. Suero facial antienvejecimiento para líneas, arrugas y daños solares prematuros para rejuvenecer e hidratar. Adecuado para pieles sensibles. 30 ML',
         price: 44,
         stock: 8,
-        img: ['/public/img/4.png'],
+        img: ['/img/4.png'],
         category: 'la_roche_posay'
     },
     {
@@ -41,7 +41,7 @@ const products = [
         description: 'Hidratante facial con SPF, ácido hialurónico, niacinamida y ceramidas | No Graso | Se mezcla perfectamente sin tono blanco | Protector solar no comedogénico | 89 ML',
         price: 16,
         stock: 12,
-        img: ['/public/img/5.png'],
+        img: ['/img/5.png'],
         category: 'cerave'
     },
     {
@@ -50,7 +50,7 @@ const products = [
         description: 'Gel hidratante facial con ceramidas, niacinamida, ácido hialurónico | Sin fragancia | Sin aceite | Hidratante matificante sin peso | 52 ML',
         price: 17,
         stock: 10,
-        img: ['/public/img/6.png'],
+        img: ['/img/6.png'],
         category: 'cerave'
     },
     {
@@ -59,7 +59,7 @@ const products = [
         description: 'Hidrourea + manteca de karité | Loción Corporal Para Piel Seca | Alivia los signos de piel extra seca | Loción hidratante no grasa para piel áspera, tensa, enrojecida y con picazón | 473 ML',
         price: 19,
         stock: 15,
-        img: ['/public/img/7.png'],
+        img: ['/img/7.png'],
         category: 'cerave'
     },
     {
@@ -68,7 +68,7 @@ const products = [
         description: 'Clinique Acne Solutions con 2 % de ácido salicílico para pieles propensas al acné | 125 ML',
         price: 28,
         stock: 12,
-        img: ['/public/img/8.png'],
+        img: ['/img/8.png'],
         category: 'clinique'
     },
     {
@@ -77,7 +77,7 @@ const products = [
         description: 'Clinique Acne Solutions Acné + Suero facial corrector de líneas con ácido salicílico | Antienvejecimiento + Suavizado | 30 ML',
         price: 57,
         stock: 10,
-        img: ['/public/img/9.png'],
+        img: ['/img/9.png'],
         category: 'clinique'
     },
     {
@@ -86,7 +86,7 @@ const products = [
         description: 'Suero facial corrector de arrugas Clinique Smart Clinical Repair con ácido hialurónico, péptidos + suero retinoide avanzado | Antienvejecimiento + Hidratante | 50 ML',
         price: 22,
         stock: 15,
-        img: ['/public/img/10.png'],
+        img: ['/img/10.png'],
         category: 'clinique'
     },
 ];
