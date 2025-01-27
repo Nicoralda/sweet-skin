@@ -6,7 +6,7 @@ const products = [
         price: 45,
         stock: 10,
         img: ['/img/1.png'],
-        category: 'la_roche_posay'
+        category: 'La Roche-Posay'
     },
     {
         id: 'prod2',
@@ -15,7 +15,7 @@ const products = [
         price: 35,
         stock: 15,
         img: ['/img/2.png'],
-        category: 'la_roche_posay'
+        category: 'La Roche-Posay'
     },
     {
         id: 'prod3',
@@ -24,7 +24,7 @@ const products = [
         price: 20,
         stock: 10,
         img: ['/img/3.png'],
-        category: 'la_roche_posay'
+        category: 'La Roche-Posay'
     },
     {
         id: 'prod4',
@@ -33,7 +33,7 @@ const products = [
         price: 44,
         stock: 8,
         img: ['/img/4.png'],
-        category: 'la_roche_posay'
+        category: 'La Roche-Posay'
     },
     {
         id: 'prod5',
@@ -42,7 +42,7 @@ const products = [
         price: 16,
         stock: 12,
         img: ['/img/5.png'],
-        category: 'cerave'
+        category: 'CeraVe'
     },
     {
         id: 'prod6',
@@ -51,7 +51,7 @@ const products = [
         price: 17,
         stock: 10,
         img: ['/img/6.png'],
-        category: 'cerave'
+        category: 'CeraVe'
     },
     {
         id: 'prod7',
@@ -60,7 +60,7 @@ const products = [
         price: 19,
         stock: 15,
         img: ['/img/7.png'],
-        category: 'cerave'
+        category: 'CeraVe'
     },
     {
         id: 'prod8',
@@ -69,7 +69,7 @@ const products = [
         price: 28,
         stock: 12,
         img: ['/img/8.png'],
-        category: 'clinique'
+        category: 'Clinique'
     },
     {
         id: 'prod9',
@@ -78,7 +78,7 @@ const products = [
         price: 57,
         stock: 10,
         img: ['/img/9.png'],
-        category: 'clinique'
+        category: 'Clinique'
     },
     {
         id: 'prod10',
@@ -87,7 +87,7 @@ const products = [
         price: 22,
         stock: 15,
         img: ['/img/10.png'],
-        category: 'clinique'
+        category: 'Clinique'
     },
 ];
 
@@ -98,3 +98,19 @@ export const getProducts = () => {
         }, 500)
     })
 }
+
+export const getProductById = (productId) => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(products.find(prod => prod.id === productId))
+        }, 500)
+    })
+}
+
+export const getProductByCategory = (categoryId) => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(products.filter((prod) => prod.category === categoryId));
+        }, 500);
+    });
+};

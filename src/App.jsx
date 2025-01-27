@@ -1,9 +1,10 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState, useEffect } from "react";
 import NavBar from "./components/NavBar/NavBar";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 import searchImage from "./api";
 import ImageList from "./components/ImageList/ImageList";
-import ItemCount from "./components/ItemCount/ItemCount";
-import { useState, useEffect } from "react";
 
 function App() {
 
@@ -16,14 +17,20 @@ function App() {
         };
 
         fetchImages();
-    }, []); 
+    }, []);
 
     return (
         <div className="App">
-            <NavBar />
-            <ItemListContainer greeting={'Tu piel, nuestro dulce secreto.'} />
-            <ItemCount initial={1} stock={10} onAdd={(quantity) => console.log('Cantidad agregada', quantity)}/>
-            <ImageList images={images}/>
+            <BrowserRouter>
+                <NavBar />
+                <Routes>
+                    <Route path="/" element= {<ItemListContainer />} />
+                    <Route path="/category/:categoryId" element= {<ItemListContainer />} />
+                    <Route path="/item/:itemId" element={<ItemDetailContainer />} />
+                    <Route path="/galeria" element={<ImageList images={images} />} />
+                    <Route path="*" element={<h1>404 page not found</h1>} />
+                </Routes>
+            </BrowserRouter>
         </div>
     )
 
