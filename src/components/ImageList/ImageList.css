@@ -1,9 +1,9 @@
 .image-list {
-    columns:6 300px;
-    column-gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-img {
-    width: 100%;
-    margin-bottom: 10px;
+.image-list img {
+    width: 100px;
+    height: auto;
 }

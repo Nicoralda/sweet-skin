@@ -10,14 +10,19 @@ function App() {
 
     const [images, setImages] = useState([]);
 
-    useEffect(() => {
-        const fetchImages = async () => {
-            const resultado = await searchImage("skin"); 
+useEffect(() => {
+    const fetchImages = async () => {
+        try {
+            const resultado = await searchImage("skin");
+            console.log('Fetched Images:', resultado); // Verifica que las imágenes se obtuvieron
             setImages(resultado);
-        };
+        } catch (error) {
+            console.error('Error fetching images:', error);
+        }
+    };
 
-        fetchImages();
-    }, []);
+    fetchImages();
+}, []);
 
     return (
         <div className="App">
@@ -31,6 +36,10 @@ function App() {
                     <Route path="*" element={<h1>404 page not found</h1>} />
                 </Routes>
             </BrowserRouter>
+            <div>
+                <h2>Galería</h2>
+                <ImageList images={images} />
+            </div>
         </div>
     )
 
