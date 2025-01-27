@@ -1,5 +1,5 @@
 import ImageShow from "../ImageShow";
-import "./ImageList.css";
+import "./imageList.css";
 
 function ImageList({ images }) {
     const displayedImages = images.slice(0, 5);

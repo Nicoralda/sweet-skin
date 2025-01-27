@@ -46,7 +46,7 @@ const products = [
     },
     {
         id: 'prod6',
-        name: 'Gel hidratante ultraligero CeraVe',
+        name: 'Gel hidratante ultraligero CeraVe con ceramidas',
         description: 'Gel hidratante facial con ceramidas, niacinamida, ácido hialurónico | Sin fragancia | Sin aceite | Hidratante matificante sin peso | 52 ML',
         price: 17,
         stock: 10,

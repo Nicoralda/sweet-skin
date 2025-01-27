@@ -1,4 +1,5 @@
 import { BsBasket3Fill } from "react-icons/bs";
+import '../NavBar/navbar.css';
 
 const CartWidget = () => {
     return (

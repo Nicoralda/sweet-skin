@@ -14,7 +14,7 @@ useEffect(() => {
     const fetchImages = async () => {
         try {
             const resultado = await searchImage("skin");
-            console.log('Fetched Images:', resultado); // Verifica que las imágenes se obtuvieron
+            console.log('Fetched Images:', resultado); 
             setImages(resultado);
         } catch (error) {
             console.error('Error fetching images:', error);
@@ -28,21 +28,22 @@ useEffect(() => {
         <div className="App">
             <BrowserRouter>
                 <NavBar />
-                <Routes>
-                    <Route path="/" element= {<ItemListContainer />} />
-                    <Route path="/category/:categoryId" element= {<ItemListContainer />} />
-                    <Route path="/item/:itemId" element={<ItemDetailContainer />} />
-                    <Route path="/galeria" element={<ImageList images={images} />} />
-                    <Route path="*" element={<h1>404 page not found</h1>} />
-                </Routes>
+                <div className="GalleryContainer">
+                    <Routes>
+                        <Route path="/" element={
+                            <>
+                                <ImageList images={images} />
+                                <ItemListContainer />
+                            </>
+                        } />
+                        <Route path="/category/:categoryId" element={<ItemListContainer />} />
+                        <Route path="/item/:itemId" element={<ItemDetailContainer />} />
+                        <Route path="*" element={<h1>404 page not found</h1>} />
+                    </Routes>
+                </div>
             </BrowserRouter>
-            <div>
-                <h2>Galería</h2>
-                <ImageList images={images} />
-            </div>
         </div>
-    )
-
+    );
 }
 
 export default App;

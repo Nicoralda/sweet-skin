@@ -1,7 +1,52 @@
 .NavBar {
-    width: 100%;
-    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #c8b6ff;
+    border-radius: 40px;
+}
+
+.NavBar h2 {
+    color: #ffffff; 
+    font-weight: bold;
+    font-family:monospace;
+    font-size: 25px;
+}
+
+.LogoLink {
+    text-decoration: none; 
+}
+
+.Categories {
+    display: flex;
+    gap: 20px;
+    background-color: #fff; 
+    padding: 7px 20px;
+    border-radius: 20px;
+}
+
+.Option, .ActiveOption {
+    text-decoration: none;
+    color: #000; 
+    padding: 5px 10px;
+}
+
+.ActiveOption {
+    background-color: #c8b6ff; 
+    color: #fff;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.cartwidget {
     display: flex;
     align-items: center;
-    background-color: pink;
+    color: #fff; 
+    font-size: 15px; 
+}
+
+.cartwidget svg {
+    margin-right: 5px; 
+    font-size: 25px; 
 }

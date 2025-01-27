@@ -1,12 +1,12 @@
-import { useState, useEffect } from "react"
-import { getProductByCategory, getProducts } from "../../asyncProducts"
-import ItemList from "../ItemList/ItemList"
-import { useParams } from "react-router-dom"
+import { useState, useEffect } from "react";
+import { getProductByCategory, getProducts } from "../../asyncProducts";
+import ItemList from "../ItemList/ItemList";
+import { useParams } from "react-router-dom";
 
 const ItemListContainer = () => {
-    const [products, setProducts] = useState([])
+    const [products, setProducts] = useState([]);
 
-    const { categoryId } = useParams()
+    const { categoryId } = useParams();
 
     useEffect(() => {
         const asyncFunc = categoryId ? getProductByCategory : getProducts;
@@ -24,7 +24,7 @@ const ItemListContainer = () => {
         <div>
             <ItemList products={products} />
         </div>
-    )
-}
+    );
+};
 
-export default ItemListContainer
+export default ItemListContainer;
