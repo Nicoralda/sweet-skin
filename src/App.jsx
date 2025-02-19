@@ -5,6 +5,7 @@ import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 import searchImage from "./api";
 import ImageList from "./components/ImageList/ImageList";
+import { CartProvider } from "./context/cartContext";
 
 function App() {
 
@@ -27,6 +28,7 @@ useEffect(() => {
     return (
         <div className="App">
             <BrowserRouter>
+                <CartProvider>
                 <NavBar />
                 <div className="GalleryContainer">
                     <Routes>
@@ -41,6 +43,7 @@ useEffect(() => {
                         <Route path="*" element={<h1>404 page not found</h1>} />
                     </Routes>
                 </div>
+                </CartProvider>
             </BrowserRouter>
         </div>
     );
