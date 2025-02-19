@@ -11,14 +11,14 @@ const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
     const { addItem } = useContext(CartContext);
 
     const handleOnAdd = (quantity) => {
-        setQuantityAdded(quantity)
+        setQuantityAdded(quantity);
 
         const item = {
             id, name, price, img
-        }
+        };
 
         addItem(item, quantity);
-    }
+    };
 
     return (
         <article className="CardItem">
@@ -35,13 +35,13 @@ const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
                     <p className="ItemStock">Stock disponible: {stock}</p>
                 </section>
                 <footer className="ItemFooter">
-                        {
-                            quantityAdded > 0 ? (
-                                <Link to = '/cart' className='Option'>Terminar compra</Link>
-                            ) : (
+                    {
+                        quantityAdded > 0 ? (
+                            <Link to='/cart' className='Option'>Terminar compra</Link>
+                        ) : (
                             <ItemCount initial={1} stock={stock} onAdd={handleOnAdd} />
                         )
-                        }
+                    }
                 </footer>
             </div>
         </article>

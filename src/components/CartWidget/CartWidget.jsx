@@ -1,13 +1,19 @@
 import { BsBasket3Fill } from "react-icons/bs";
 import '../NavBar/navbar.css';
+import Cart from "../Cart/Cart";
+import { useContext } from "react";
+import { CartContext } from '../../context/cartContext';
+import { Link } from "react-router-dom";
 
 const CartWidget = () => {
+    const { totalQuantity } = useContext(CartContext);
+
     return (
-        <div className="cartwidget">
+        <Link to='/cart' className="CartWidget">
             <BsBasket3Fill />
-            8
-        </div>
-    )
+            {totalQuantity}
+        </Link>
+    );
 }
 
-export default CartWidget
+export default CartWidget;

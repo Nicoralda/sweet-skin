@@ -6,6 +6,7 @@ import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailCont
 import searchImage from "./api";
 import ImageList from "./components/ImageList/ImageList";
 import { CartProvider } from "./context/cartContext";
+import Cart from "./components/Cart/Cart";
 
 function App() {
 
@@ -40,6 +41,7 @@ useEffect(() => {
                         } />
                         <Route path="/category/:categoryId" element={<ItemListContainer />} />
                         <Route path="/item/:itemId" element={<ItemDetailContainer />} />
+                        <Route path="/cart" element={<Cart />} />
                         <Route path="*" element={<h1>404 page not found</h1>} />
                     </Routes>
                 </div>
