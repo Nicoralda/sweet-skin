@@ -67,12 +67,13 @@ const Checkout = () => {
     };
 
     if (loading) {
-        return <h1>Se está generando la orden...</h1>;
+        return <h1>Generando pedido...</h1>;
     }
     if (orderId) {
         return (
             <div>
-                <h1>Orden generada con éxito!!</h1>
+                <h1>¡Tu orden fue creada!</h1>
+                <h3>¿Lista para una piel hermosa?</h3>
                 <article>
                     <div>
                         <p>ID de su orden:</p>

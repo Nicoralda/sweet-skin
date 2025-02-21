@@ -3,6 +3,7 @@ import '../NavBar/navbar.css';
 import { useContext } from "react";
 import { CartContext } from '../../context/cartContext';
 import { Link } from "react-router-dom";
+import "./CartWidget.css"
 
 const CartWidget = () => {
     const { totalQuantity } = useContext(CartContext);
