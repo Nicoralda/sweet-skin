@@ -67,17 +67,17 @@ const Checkout = () => {
     };
 
     if (loading) {
-        return <h1 className="text is-size-3">Se está generando la orden...</h1>;
+        return <h1>Se está generando la orden...</h1>;
     }
     if (orderId) {
         return (
             <div>
-                <h1 className="text is-size-3">Orden generada con éxito!!</h1>
-                <article className="message is-success my-5">
-                    <div className="message-header">
+                <h1>Orden generada con éxito!!</h1>
+                <article>
+                    <div>
                         <p>ID de su orden:</p>
                     </div>
-                    <div className="message-body">
+                    <div>
                         {orderId}
                     </div>
                 </article>
@@ -86,7 +86,7 @@ const Checkout = () => {
     }
     return (
         <div>
-            <h1 className="text is-size-1">Checkout</h1>
+            <h1>Checkout</h1>
             <CheckoutForm onConfirm={createOrder} />
         </div>
     );

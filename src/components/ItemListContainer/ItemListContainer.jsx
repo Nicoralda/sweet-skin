@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
-//import { getProductByCategory, getProducts } from "../../asyncProducts";
 import ItemList from "../ItemList/ItemList";
 import { useParams } from "react-router-dom";
-
 import { getDocs, collection, query, where } from "firebase/firestore";
 import { db } from "../../config/firebase";
 

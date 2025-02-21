@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+🧴 Sweet Skin:
+¡Hola! Sweet Skin es un ecommerce especializado en productos de skincare. Este proyecto fue creado con Create React App.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Scripts Disponibles:
+En el directorio del proyecto, puedes ejecutar los siguientes comandos:
 
-## Available Scripts
+npm start:
+- Ejecuta la aplicación en modo de desarrollo.
+- Abre http://localhost:3000 para verla en tu navegador.
+- La página se recargará cuando realices cambios.
+- También puedes ver cualquier error de lint en la consola.
 
-In the project directory, you can run:
+npm test:
+- Lanza el corredor de pruebas en modo interactivo.
+- Para más información, consulta la sección sobre ejecutar pruebas.
 
-### `npm start`
+npm run build:
+- Construye la aplicación para producción en la carpeta build.
+- Empaqueta correctamente React en modo de producción y optimiza la compilación para el mejor rendimiento.
+- La compilación está minificada y los nombres de archivo incluyen los hashes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+¡Listo! Ahora solo despliega la app.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Consulta la sección sobre despliegue para más información.
 
-### `npm test`
+❗ npm run eject
+Nota: esta es una operación de una sola vía. ¡Una vez que eject, no puedes volver atrás!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Si no estás satisfecho con la herramienta de compilación y las opciones de configuración, puedes eject en cualquier momento. Este comando eliminará la única dependencia de compilación de tu proyecto.
 
-### `npm run build`
+En su lugar, copiará todos los archivos de configuración y las dependencias transitivas (webpack, Babel, ESLint, etc) directamente en tu proyecto para que tengas control total sobre ellos. Todos los comandos, excepto eject, seguirán funcionando, pero apuntarán a los scripts copiados para que puedas modificarlos.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+No necesitas usar eject. El conjunto de características seleccionadas es adecuado para implementaciones pequeñas y medianas, y no deberías sentirte obligado a usar esta característica. Sin embargo, entendemos que esta herramienta no sería útil si no pudieras personalizarla cuando estés listo para ello.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Aprender más:
+Puedes aprender más en la documentación de Create React App.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Para aprender React, consulta la documentación de React.
 
-### `npm run eject`
+Características:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Visión del carrito: puedes ver todos los productos agregados al carrito con sus respectivos detalles y subtotal.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Validación de formularios: el formulario de checkout valida automáticamente los campos de email y teléfono para asegurar que los datos ingresados sean correctos.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Estilo: la app cuenta con un diseño amigable, personalizado y muy girlie para mejorar la experiencia del usuario.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Instalación aquí:
 
-## Learn More
+Clona el repositorio:
+git clone https://github.com/tu-usuario/sweet-skin.git
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Navega al directorio del proyecto:
+cd sweet-skin
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Instala las dependencias:
+npm install
 
-### Code Splitting
+Ejecuta la aplicación:
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Despliega:
+- Para desplegar la aplicación, sigue las instrucciones en la documentación de Create React App.
